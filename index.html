@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <!-- <script src="https://unpkg.com/vue@next"></script> -->
+    <script
+      src="js/v3.2.8/vue.global.prod.js"
+      type="text/javascript"
+      charset="utf-8"
+    ></script>
+    <style type="text/css">
+      @import url(css/global.css);
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <nav id="topNav">
+        <div id="top-left">
+          <a href="#">新闻</a>
+          <a href="#">hao123</a>
+          <a href="#">地图</a>
+          <a href="#">贴吧</a>
+          <a href="#">视频</a>
+          <a href="#">图片</a>
+          <a href="#">网盘</a>
+          <a href="#">更多</a>
+        </div>
+        <div id="top-right">
+          <a href="#">设置</a>
+          <a href="#" id="login">登录</a>
+        </div>
+      </nav>
+
+      <div id="main" align="center">
+        <img
+          id="logoPic"
+          src="https://www.baidu.com/img/PCtm_d9c8750bed0b3c7d089fa7d55720d6cf.png"
+        />
+        <form id="form">
+          <span id="input_search">
+            <input type="text" id="input_text" />
+            <span class="sm_pic_box">
+              <img
+                src="https://dss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/img/searchbox/nicon-2x-6258e1cf13.png"
+                id="microphone"
+              />
+            </span>
+            <span class="sm_pic_box">
+              <img
+                src="https://dss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/img/searchbox/nicon-2x-6258e1cf13.png"
+                id="camera"
+              />
+            </span>
+          </span>
+        </form>
+      </div>
+    </div>
+  </body>
+  <script>
+    const App = {
+      data() {
+        return {
+          counter: 0,
+        };
+      },
+    };
+    Vue.createApp(App).mount("#app");
+  </script>
+</html>
