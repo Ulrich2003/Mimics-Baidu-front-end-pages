@@ -94,10 +94,10 @@ textarea {
 
 .sm_pic_box{
     width: 24px; 
-    height: 20px;
+    height: 24px;
     overflow: hidden;
     display: inline-block;
-    align-self: center;
+    background-color: salmon;
 }
 
 #microphone{
@@ -106,4 +106,45 @@ textarea {
 
 #camera{
     width: 100%;
+}
+
+#submit_btn{
+    
+    display: inline-block;
+    width: 108px;
+    height: 45px;
+    background-color: #556dea;
+    padding-top: 7px;
+    border: 2px solid #556dea;
+    margin-left: -2px;
+    border-radius:  0px 10px 10px 0px;
+}
+
+#submit_btn input{
+    font-family:Arial, sans-serif;
+    font-size: 17px;
+    color: white;
+    background-color: #556dea;
+}
+
+#nav_hot_search text{
+    font-family: Arial, sans-serif;
+}
+
+#bottom_nav{
+    position:fixed;
+    bottom: 0;
+    height: 39px;
+    width: 100%;
+    background-color: none;
+    padding-top: 11px;
+}
+#bottom_nav a{
+    color: rgb(187, 187, 187);
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 12px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    
 }
