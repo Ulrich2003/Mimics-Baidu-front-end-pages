@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <!-- <script src="https://unpkg.com/vue@next"></script> -->
+    <script
+      src="js/v3.2.8/vue.global.prod.js"
+      type="text/javascript"
+      charset="utf-8"
+    ></script>
+    <style type="text/css">
+      @import url(css/global.css);
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <nav id="topNav">
+        <div id="top-left">
+          <a href="#">新闻</a>
+          <a href="#">hao123</a>
+          <a href="#">地图</a>
+          <a href="#">贴吧</a>
+          <a href="#">视频</a>
+          <a href="#">图片</a>
+          <a href="#">网盘</a>
+          <a href="#">更多</a>
+        </div>
+        <div id="top-right">
+          <a href="#">设置</a>
+          <a href="#" id="login">登录</a>
+        </div>
+      </nav>
+
+      <div id="main" align="center">
+        <img
+          id="logoPic"
+          src="https://www.baidu.com/img/PCtm_d9c8750bed0b3c7d089fa7d55720d6cf.png"
+        />
+        <form id="form">
+          <span id="input_search">
+            <input type="text" id="input_text" />
+            <span class="sm_pic_box">
+              <img
+                src="https://dss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/img/searchbox/nicon-2x-6258e1cf13.png"
+                id="microphone"
+              />
+            </span>
+            <span class="sm_pic_box">
+              <img
+                src="https://dss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/img/searchbox/nicon-2x-6258e1cf13.png"
+                id="camera"
+              />
+            </span>
+          </span>
+          <span id="submit_btn">
+            <input type="submit" value="百度一下" />
+          </span>
+        </form>
+        <div class="hot_search">
+          <nav id="nav_hot_search">
+            <span id="hotsearch_icon"></span>
+            <span id="hotsearch_update"> 换一换 </span>
+          </nav>
+          <div id="hot_search_box">
+            <div class="hot_search_content">
+              <text class="serial one">1</text>
+              <text class="hot_search_news">姐弟坠亡案被告死刑 生母告慰孩子</text>
+            </div>
+            <div class="hot_search_content">
+              <text class="serial">4</text>
+              <text class="hot_search_news">工信部回应steam主域名被拉黑</text>
+            </div>
+            <div class="hot_search_content">
+              <text class="serial two">2</text>
+              <text class="hot_search_news">现有疫苗对奥密克戎效果不乐观</text>
+            </div>
+            <div class="hot_search_content">
+              <text class="serial">5</text>
+              <text class="hot_search_news">基金公司总监抄作业式炒股被罚千万</text>
+            </div>
+            <div class="hot_search_content">
+              <text class="serial three">3</text>
+              <text class="hot_search_news">浙江一周前有境外输入奥密克戎病例</text>
+            </div>
+            <div class="hot_search_content">
+              <text class="serial">6</text>
+              <text class="hot_search_news">国内一高校学生高仿百度页面</text>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav id="bottom_nav" align="center">
+        <a href="#">关于百度</a>
+        <a href="#">About Baidu</a>
+        <a href="#">使用百度前必读</a>
+        <a href="#">帮助中心</a>
+        <a href="#">京公网安备xxxx0002000001号</a>
+        <a href="#">京ICP证03xxxx号</a>
+        <a href="#">c2021 Baidu</a>
+        <a href="#">该网页为高仿网页，仅供学习使用，并非百度主页</a>
+        <a href="#">信息网络传播视听节目许可证 011xxxx</a>
+      </nav>
+    </div>
+  </body>
+  <script>
+    const App = {
+      data() {
+        return {
+          counter: 0,
+        };
+      },
+    };
+    Vue.createApp(App).mount("#app");
+  </script>
+</html>

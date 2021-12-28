@@ -1,0 +1,216 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+a:hover,
+a:visited,
+a:link,
+a:active {
+  color: #333;
+}
+
+input,textarea {
+
+    outline: none;
+
+    border: none;
+
+}
+
+textarea {
+
+    resize: none;
+
+    overflow: auto;
+
+}
+
+#topNav {
+  width: 100%;
+  height: 60px;
+}
+
+#top-left {
+  margin-left: 24px;
+}
+
+#top-right {
+  float: right;
+  margin-right: 24px;
+}
+
+#topNav a {
+  float: left;
+  font-size: 13px;
+  color: rgb(34, 34, 34);
+  margin-top: 19px;
+  margin-right: 24px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+#topNav a:hover {
+  color: #3c5df2;
+}
+#topNav #login {
+  background-color: #556dea;
+  padding-left: 11px;
+  padding-right: 11px;
+  margin-right: 13px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  margin-top: 16px;
+  border-radius: 6px;
+  color: white;
+}
+#topNav #login:hover {
+  background-color: #3c5df2;
+}
+
+#logoPic {
+  width: 270px;
+  margin-bottom: 15px;
+}
+
+#form {
+  margin-bottom: 40px;
+}
+
+#input_search {
+  border: solid 2px rgb(196, 199 ,206);
+  padding: 12px 16px 12px 16px;
+  border-radius: 10px 0px 0px 10px;
+}
+
+#input_search input{
+    width: 411px;
+    height: 16px;
+}
+
+.sm_pic_box{
+    width: 24px; 
+    height: 24px;
+    overflow: hidden;
+    display: inline-block;
+    background-color: salmon;
+}
+
+#microphone{
+    width: 100%;
+}
+
+#camera{
+    width: 100%;
+}
+
+#submit_btn{
+    
+    display: inline-block;
+    width: 108px;
+    height: 45px;
+    background-color: #556dea;
+    padding-top: 7px;
+    border: 2px solid #556dea;
+    margin-left: -2px;
+    border-radius:  0px 10px 10px 0px;
+}
+
+#submit_btn input{
+    font-family:Arial, sans-serif;
+    font-size: 17px;
+    color: white;
+    background-color: #556dea;
+}
+
+/* hot search Start */
+#hot_search{
+  
+}
+
+#nav_hot_search{
+  width: 654px;
+}
+
+#nav_hot_search text{
+    font-family: Arial, sans-serif;
+}
+
+#hotsearch_icon{
+  float: left;
+  width: 73px;
+  height: 24px;
+  background-image: url('../img/hotsearch_black.jpg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+#hotsearch_icon:hover{
+  background-image: url('../img/hotsearch_blue.jpg');
+}
+#hotsearch_update{
+  float: right;
+  color: #626675;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+}
+
+#hot_search_box{
+  padding-top: 30px;
+  width: 654px;
+}
+
+.hot_search_content{
+  width: 306px;
+  height: 36px;
+  margin-right: 20px;
+  float: left;
+  text-align: left;
+}
+
+.serial{
+  font-size: 18px;
+  font-family: Arial, sans-serif;
+  margin-right: 14px;
+  color: #9195a3;
+}
+
+.one{
+  color: #fe2d46;
+}
+.two{
+  color: #ff6600;
+}
+.three{
+  color: #faa90e;
+}
+
+.hot_search_news{
+  color: #222222;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+}
+
+/* hot search End */
+
+#bottom_nav{
+    position:fixed;
+    bottom: 0;
+    height: 39px;
+    width: 100%;
+    background-color: none;
+    padding-top: 11px;
+}
+#bottom_nav a{
+    color: rgb(187, 187, 187);
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 12px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    
+}
