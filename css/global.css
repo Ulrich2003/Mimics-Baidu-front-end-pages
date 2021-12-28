@@ -79,6 +79,7 @@ textarea {
 }
 
 #form {
+  margin-bottom: 40px;
 }
 
 #input_search {
@@ -127,9 +128,74 @@ textarea {
     background-color: #556dea;
 }
 
+/* hot search Start */
+#hot_search{
+  
+}
+
+#nav_hot_search{
+  width: 654px;
+}
+
 #nav_hot_search text{
     font-family: Arial, sans-serif;
 }
+
+#hotsearch_icon{
+  float: left;
+  width: 73px;
+  height: 24px;
+  background-image: url('../img/hotsearch_black.jpg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+#hotsearch_icon:hover{
+  background-image: url('../img/hotsearch_blue.jpg');
+}
+#hotsearch_update{
+  float: right;
+  color: #626675;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+}
+
+#hot_search_box{
+  padding-top: 30px;
+  width: 654px;
+}
+
+.hot_search_content{
+  width: 306px;
+  height: 36px;
+  margin-right: 20px;
+  float: left;
+  text-align: left;
+}
+
+.serial{
+  font-size: 18px;
+  font-family: Arial, sans-serif;
+  margin-right: 14px;
+  color: #9195a3;
+}
+
+.one{
+  color: #fe2d46;
+}
+.two{
+  color: #ff6600;
+}
+.three{
+  color: #faa90e;
+}
+
+.hot_search_news{
+  color: #222222;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+}
+
+/* hot search End */
 
 #bottom_nav{
     position:fixed;
