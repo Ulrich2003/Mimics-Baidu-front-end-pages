@@ -57,7 +57,7 @@
             <input type="submit" value="百度一下" />
           </span>
         </form>
-        <div class="hot_search">
+        <div class="hot_search" v-if="flag">
           <nav id="nav_hot_search">
             <span id="hotsearch_icon"></span>
             <span id="hotsearch_update"> 换一换 </span>
@@ -65,7 +65,9 @@
           <div id="hot_search_box">
             <div class="hot_search_content">
               <text class="serial one">1</text>
-              <text class="hot_search_news">姐弟坠亡案被告死刑 生母告慰孩子</text>
+              <text class="hot_search_news"
+                >{{json[1].article}}</text
+              >
             </div>
             <div class="hot_search_content">
               <text class="serial">4</text>
@@ -77,11 +79,15 @@
             </div>
             <div class="hot_search_content">
               <text class="serial">5</text>
-              <text class="hot_search_news">基金公司总监抄作业式炒股被罚千万</text>
+              <text class="hot_search_news"
+                >基金公司总监抄作业式炒股被罚千万</text
+              >
             </div>
             <div class="hot_search_content">
               <text class="serial three">3</text>
-              <text class="hot_search_news">浙江一周前有境外输入奥密克戎病例</text>
+              <text class="hot_search_news"
+                >浙江一周前有境外输入奥密克戎病例</text
+              >
             </div>
             <div class="hot_search_content">
               <text class="serial">6</text>
@@ -105,9 +111,26 @@
   </body>
   <script>
     const App = {
-      data() {
-        return {
-          counter: 0,
+      json: null,
+      flag: false,
+      created: function () {
+        var url =
+          "https://mockapi.eolinker.com/FF5yzAld2d6adda0e9ea92a7d467f142b6d5daa928b3e7c/hotSearch"; /*json文件url*/
+        var request = new XMLHttpRequest();
+        request.open("get", url); /*设置请求方法与路径*/
+        request.send(null); /*不发送数据到服务器*/
+        var jsonObj;
+        request.onload = function () {
+          /*XHR对象获取到返回信息后执行*/
+          if (request.status == 200) {
+            /*返回状态为200，即为数据获取成功*/
+            JSON.parse(request.responseText);
+            flag = true;
+            
+          } else {
+            /*请求失败的提醒*/
+            console.log("JSON:Some errors have occurred");
+          }
         };
       },
     };
